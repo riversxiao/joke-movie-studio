@@ -1,0 +1,19 @@
+{
+  "segments": [
+    {
+      "start_time": "00:00.1",
+      "end_time": "00:03.1",
+      "content": "People ask how I teach my little nephew about taxes."
+    },
+    {
+      "start_time": "00:03.5",
+      "end_time": "00:04.4",
+      "content": "Super easy."
+    },
+    {
+      "start_time": "00:04.8",
+      "end_time": "00:11",
+      "content": "I buy him a huge ice cream cone, and before he even takes a lick, I bite off 40%."
+    }
+  ]
+}

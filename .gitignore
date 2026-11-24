@@ -1,0 +1,15 @@
+# Secrets & local credentials (NEVER commit)
+.env
+.env.*
+*.env
+env.sh
+config.yaml
+*.key
+*.pem
+
+# Temporary / build / scratch files
+__pycache__/
+*.pyc
+.DS_Store
+output/_tmp/
+*.log

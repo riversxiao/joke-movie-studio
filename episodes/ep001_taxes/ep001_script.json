@@ -1,0 +1,65 @@
+{
+  "episode_id": "EP001",
+  "title": "How to Teach Kids About Taxes 💀",
+  "reference_short": "https://www.youtube.com/shorts/u7xgfuToF7I",
+  "format": "Comedy Club Stand-Up + Original Audience Reaction Cutaway (9:16)",
+  "target_duration_sec": 22.5,
+  "character": {
+    "id": "C01_CHLOE",
+    "name": "Chloe",
+    "visual_en": "25-year-old charismatic American female stand-up comedian with wavy dark brunette hair and wispy French bangs, wearing a fitted dusty-pink sleeveless mini dress and delicate layered gold necklaces, natural skin texture, expressive eyes, warm confident smirk",
+    "voice_gemini": "Kore",
+    "voice_style": "Playful, sharp-tongued 25-year-old New York female stand-up comic, natural conversational cadence with crisp deadpan punchlines"
+  },
+  "location": {
+    "id": "N-COMEDY-CLUB",
+    "name": "Underground Brick-Wall Comedy Club",
+    "visual_en": "Dimly lit intimate underground New York comedy club at night, weathered dark red brick stage wall, softly out-of-focus glowing vintage circular neon sign reading COMEDY CLUB in blue and warm white near top, warm overhead amber stage spotlight, dark silhouettes of front-row audience heads along the bottom foreground edge, authentic 35mm handheld smartphone live-show aesthetic"
+  },
+  "shots": [
+    {
+      "shot_id": "S01_SETUP",
+      "type": "stage_main",
+      "duration_sec": 10,
+      "camera": "Medium shot, authentic front-row handheld slight sway, 9:16 vertical",
+      "audio_file": "audio/beat1_setup.wav",
+      "dialogue": "People ask how I teach my little nephew about taxes. Super easy. I buy him a huge ice cream cone... and before he even takes a lick, I bite off forty percent.",
+      "highlight_words": ["TAXES", "SUPER EASY", "FORTY PERCENT"],
+      "keyframe_prompt": "Candid front-row smartphone photo from a dimly lit underground New York comedy club at night, 9:16 vertical framing. A charismatic 25-year-old American female stand-up comedian with wavy dark brunette hair and wispy bangs, wearing a fitted dusty-pink sleeveless mini dress and delicate layered gold necklaces, sitting cross-legged on a tall wooden barstool on stage. She holds a wired black dynamic handheld microphone near her mouth with a playful, cheeky expression. Warm amber overhead spotlight against a weathered dark red brick wall with a softly blurred vintage glowing circular sign reading COMEDY CLUB near the top. Dark silhouetted heads of front-row audience members frame the bottom foreground edge. Authentic low-light live club grain, natural skin texture, no on-screen text or watermarks.",
+      "video_prompt_gemini": "Authentic front-row handheld smartphone video of a live New York comedy club stand-up set. Keep the exact comedian, dusty-pink dress, wooden barstool, wired microphone, dark red brick wall, glowing COMEDY CLUB sign, and bottom foreground audience silhouettes from the reference image. With playful, confident New York stand-up energy and natural slight hand gestures, she speaks into the microphone: \"People ask how I teach my little nephew about taxes. Super easy. I buy him a huge ice cream cone... and before he even takes a lick, I bite off forty percent.\" She raises her eyebrows and mimicks taking a cheeky big bite on \"forty percent\", pausing with a sly smirk as light scattered audience chuckles ripple in the dimly lit club. Natural handheld micro-sway, crisp lip-sync, live room acoustics, no on-screen subtitles."
+    },
+    {
+      "shot_id": "S02_PUNCHLINE",
+      "type": "stage_closeup",
+      "duration_sec": 8,
+      "camera": "Tight medium close-up, slow slight handheld push-in on punchline, 9:16 vertical",
+      "audio_file": "audio/beat2_punchline.wav",
+      "dialogue": "Then when he starts crying, I tell him, relax buddy — I'm using it to fix the sidewalk. And then I buy myself a second cone.",
+      "highlight_words": ["CRYING", "FIX THE SIDEWALK", "SECOND CONE"],
+      "keyframe_prompt": "Tight medium close-up candid smartphone shot of the exact same 25-year-old brunette female stand-up comedian from the reference image, same wavy dark hair with wispy bangs, same dusty-pink sleeveless dress and gold necklaces, same wired black microphone held close to her lips, leaning slightly forward on the barstool with a razor-sharp deadpan amused smirk. Same dark red brick wall with blurred COMEDY CLUB glow behind her, warm stage spotlight, cinematic live club grain, 9:16 vertical, no on-screen text.",
+      "video_prompt_gemini": "Tight medium close-up live comedy club smartphone shot matching the exact comedian, outfit, brick wall, and warm spotlight from the reference image. She leans slightly closer into the wired mic with mock-innocent deadpan comedic timing and speaks clearly: \"Then when he starts crying, I tell him, relax buddy — I'm using it to fix the sidewalk...\" She holds a half-second deadpan beat, eyes widening playfully, then drops the punchline: \"And then I buy myself a second cone.\" Immediately as she finishes, the live comedy club crowd erupts into loud genuine laughter and hoots. Crisp lip-sync, authentic club mic reverb, no on-screen text."
+    },
+    {
+      "shot_id": "S03_AUDIENCE_REACTION",
+      "type": "audience_cutaway",
+      "duration_sec": 3,
+      "camera": "Handheld whip-pan / quick audience reaction cut, dimly lit crowd, 9:16 vertical",
+      "audio_file": null,
+      "dialogue": "",
+      "highlight_words": [],
+      "keyframe_prompt": "Candid low-light smartphone photo inside the same dimly lit underground New York comedy club, 9:16 vertical framing. A cheerful 30-year-old Black man in a casual grey crewneck sweatshirt and his friends sitting at a tiny round dark cocktail table with drinks and straws, caught mid-burst of uncontrollable laughter, leaning back slapping the table in disbelief. Warm amber stage light spills onto their faces against dark moody club shadows. Authentic grainy live comedy club crowd photography, zero text overlays.",
+      "video_prompt_gemini": "Candid handheld smartphone reaction cutaway of the audience inside the dimly lit comedy club from the reference image. The man in the grey sweatshirt bursts into uncontrollable hysterical laughter, throwing his head back and slapping the cocktail table while his friends beside him double over laughing and pointing toward the stage. Loud, contagious live comedy club crowd laughter and clapping fill the room. Authentic slightly shaky live handheld camera, warm stage spill lighting, no text."
+    },
+    {
+      "shot_id": "S04_CLOSER",
+      "type": "stage_closeup",
+      "duration_sec": 3,
+      "camera": "Quick snap-cut back to comedian tight close-up, deadpan hold, 9:16 vertical",
+      "audio_file": "audio/beat3_closer.wav",
+      "dialogue": "Welcome to adulthood.",
+      "highlight_words": ["WELCOME TO", "ADULTHOOD."],
+      "keyframe_prompt": "Reuse S02_PUNCHLINE keyframe for seamless snap-cut continuity.",
+      "video_prompt_gemini": "Snap-cut back to the tight close-up of the exact same brunette comedian from the reference image as the crowd laughter begins to dip. Holding a completely unapologetic deadpan smirk into the microphone, she tilts her head slightly and delivers a crisp three-word closer: \"Welcome to adulthood.\" She lowers the microphone an inch with a knowing blink as a fresh wave of laughter and applause swells from the audience. Crisp lip-sync, natural live club audio, no text."
+    }
+  ]
+}
