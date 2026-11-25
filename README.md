@@ -75,6 +75,12 @@ python3 episodes/ep001_taxes/post_edit.py \
 
 ---
 
+## Single-shot Talk Show: bilingual karaoke finishing
+
+For an existing portrait clip with its original voice track, use the [bilingual karaoke post-production kit](tools/talkshow_karaoke/README.md). It adds large English and Simplified Chinese subtitles, word-synced gold highlighting, and a reusable comment cue after the reveal. It renders locally and does not call a video generator or touch EP001.
+
+---
+
 ## Long-Term Production Architecture (Colab G4 96GB)
 
 See [docs/MASTER_PLAN.md](docs/MASTER_PLAN.md) for the full scaled production plan combining:
