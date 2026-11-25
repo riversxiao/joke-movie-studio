@@ -1,0 +1,10 @@
+{
+  "cta_start": 2.0,
+  "cta_duration": 1.55,
+  "cues": [
+    [0.3, 1.6, "This is a sample.", "这是一条示例。"]
+  ],
+  "word_onsets": [
+    [0.30, 0.60, 0.81, 1.02]
+  ]
+}
