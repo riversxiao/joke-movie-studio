@@ -13,6 +13,10 @@ if abs(w/h-9/16)>0.025: p.error('Expected a portrait 9:16 video.')
 cfg=json.loads(a.cues.read_text(encoding='utf8'));dur=float(meta['duration'])
 cues,cta,cta_len=cfg['cues'],float(cfg['cta_start']),float(cfg.get('cta_duration',1.55))
 if not cues or not 0<cta<=dur or cta_len<=0 or cta_len>5: p.error('Invalid cue or CTA timing.')
+line_scales = cfg.get('line_scale_x', [100] * len(cues))
+if (not isinstance(line_scales, list) or len(line_scales) != len(cues)
+    or any(type(value) is not int or not 55 <= value <= 100 for value in line_scales)):
+ p.error('line_scale_x must contain one integer between 55 and 100 per cue.')
 prev=0
 for s,e,en,zh in cues:
  if not prev<=s<e<=min(cta,dur) or not en or not zh: p.error('Cues must be nonempty, chronological, and end before CTA.')
@@ -49,19 +53,21 @@ with tempfile.TemporaryDirectory(prefix='talkshow_sub_') as tmp:
   p.error('Provide one onset array per caption cue.')
  for i,(s,e,en,zh) in enumerate(cues):
   words=label(en).split()
+  scale=line_scales[i]
+  tag=r'{\fscx'+str(scale)+'}' if scale != 100 else ''
   event(s,e,'ZH',1009,label(zh))
   if word_cues is None:
-   event(s,e,'EN',950,label(en))
+   event(s,e,'EN',950,tag+label(en))
    continue
   times=word_cues[i]
   if len(times)!=len(words) or not s<=times[0]<e or any(a>=b for a,b in zip(times,times[1:])) or times[-1]>=e:
    p.error(f'Word onsets do not match cue {i+1}.')
   if s<times[0]:
-   event(s,times[0],'EN',950,en)
+   event(s,times[0],'EN',950,tag+en)
   for j,(start,end) in enumerate(zip(times,[*times[1:],e])):
    colored=words.copy()
    colored[j]=r'{\1c&H6DE7FF&}'+colored[j]+r'{\1c&HFFFFFF&}'
-   event(start,end,'EN',950,' '.join(colored))
+   event(start,end,'EN',950,tag+' '.join(colored))
  ass.write_text(header+'\n'.join(lines)+'\n',encoding='utf8')
  width=round(w*.41/2)*2
  filt=(f"[0:v]tpad=stop_mode=clone:stop_duration={hold+.04:.3f},subtitles={ass}[main];"
